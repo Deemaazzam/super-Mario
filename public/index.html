@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script type="module" src="./js/main.js"></script>
+    <style>
+        body{
+            background-color: black;
+            margin:0;
+        }
+        #screen{
+            display:block;
+            height:100vh;
+            margin:auto;
+            image-rendering: pixelated;
+        }
+        button{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            font-family: 'Press Start 2P';
+            font-size:20px;
+            border: none;
+            background: none;
+            display: none;
+            text-shadow: 1px solid white;
+            cursor: pointer;
+            color:rgb(75, 75, 75);
+        }
+        div{
+            position: absolute;
+            top:50%;
+            left:5%;
+            transform: translate(-5%,-50%);
+            font-family: 'Press Start 2P';
+            font-size:20px;
+            color:white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="divs">
+        SUPER MARIO <br/>
+        Click the screen to <br/>
+        start the game <br/>
+        Controls: <br/>
+        ArrowRight &#8594;  <br/>
+        ArrowLeft &#8592;<br/>
+        space  to jump
+    </div>
+    <canvas id="screen" width="256" height="240" style="pointer-events: none;"></canvas>
+    <button id="buttonRestart">Play Again?</button>
+</body>
+</html>
